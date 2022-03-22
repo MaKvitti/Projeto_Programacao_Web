@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RIO CLARO BASQUETE</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/estilo2.css">
+        <link rel="shortcut icon" href="img/iconlogo.png" type="image/x-icon" />
+        <script src="js/js.js"></script>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/tooltip.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
+     
+        
+      
+    </head>
+
+    <body onload="star()">
+        <div class="jumbotron">
+                <div class="row">
+                        <a href="Main.html"><img src="img/Logo-Rio-Claro.png" class="logoRC"/></a>
+                        <div class=' col text-right'>
+                            <ul style=" list-style-type:none;">
+                                <li><a href="https://www.facebook.com/"><img src="img/icon-face.png" class="socialLogo "/></a></li>
+                                <li><a href="https://www.instagram.com/"><img src="img/icon-in.png" class="socialLogo "/></a></li>
+                                <li><a href="https://twitter.com/"><img src="img/icon-tw.png" class="socialLogo  "/></a></li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+
+        <div id="fundo">
+        <div class="container">
+        
+           
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav  w-100 " >
+    
+                            <li class="nav-item ml-right">
+                                <a href="Main.html" class="nav-link">Home</a>
+                            </li>
+    
+                            <li class="nav-item ml-righ">
+                                <a href="noticias.html" class="nav-link" >Notícias</a>
+                            </li>
+    
+                            <li class="nav-item dropdown ml-righ">
+                                <a class="nav-link dropdown-toggle" data-toggle='dropdown' href="#">Equipe</a>
+                                <div class="dropdown-menu" >
+                                    <a class='dropdown-item nav-link' href="mascote.html">Mascote</a>
+                                    <a class='dropdown-item nav-link' href="jogadores.html">Elenco</a>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item ml-righ">
+                                <a href="calen.html" class="nav-link active" >Calendário de Jogos</a>
+                            </li>
+    
+                            <li class="nav-item ml-righ">
+                                    <a href="socio.html" class="nav-link" >Sócio-Torcedor</a>
+                            </li>
+    
+                            <li class="nav-item dropdown ml-righ">
+                                    <a class="nav-link dropdown-toggle" data-toggle='dropdown' href="#">Sobre</a>
+                                    <div class="dropdown-menu" >
+                                            <a class='dropdown-item nav-link' href="historia.html">História</a>
+                                            <a class='dropdown-item nav-link' href="contato.html">Contato</a>
+                                    </div>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    </nav>
+            
+        
+            
+                    <div class="tab-content">
+                            
+                    <div class='tab-pane active postagem'><br>
+                        <div class="cabecalho">
+                                <tr>
+                                    <h3 id = 'mesAno'></h3>
+                                    <div class='row' >
+                                            <img src="img/seta2 .png" id="ante" onclick="ante()"></img>
+                                            <img src="img/seta1 .png" id="prox" onclick="prox()"></img>
+                                    </div>
+                                    
+                                </tr>
+                            </div>    
+                            <div class="col-lg-12 col-12 col-md-12 container table-responsive" >     
+                            <table id='tabela' class="table table-striped" cellpadding="0" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="diaSemana" >Dom</th>
+                                            <th class="diaSemana">Seg</th>
+                                            <th class="diaSemana">Ter</th>
+                                            <th class="diaSemana">Qua</th>
+                                            <th class="diaSemana">Qui</th>
+                                            <th class="diaSemana">Sex</th>
+                                            <th class="diaSemana">Sab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td class="diasNome" id = '0' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '1' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '2' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '3' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '4' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '5' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '6' onclick="salvar(this)"></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="diasNome" id = '7'  onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '8'  onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '9'  onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '10' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '11' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '12' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '13' onclick="salvar(this)"></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="diasNome" id = '14' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '15' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '16' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '17' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '18' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '19' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '20' onclick="salvar(this)"></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="diasNome" id = '21' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '22' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '23' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '24' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '25' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '26' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '27' onclick="salvar(this)"></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="diasNome" id = '28' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '29' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '30' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '31' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '32' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '33' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '34' onclick="salvar(this)"></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="diasNome" id = '35' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '36' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '37' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '38' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '39' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '40' onclick="salvar(this)"></td>
+                                                <td class="diasNome" id = '41' onclick="salvar(this)"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
+                        <div class ="impre">
+                            <button id="impr" onclick="imp()">Imprimir</button>
+                                <div id='quadrado' ></div> 
+                            </div> 
+                        </div>
+                        
+                    </div>
+        </div>  
+        </div>
+        
+    </body>
+</html>
